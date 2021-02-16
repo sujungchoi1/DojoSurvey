@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <title>Dojo Survey</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>Dojo Survey</h2>
+        <form action="result" method="post">
+            <div class="row mb-3">
+                <label class="col-sm col-form-label">Your Name:</label>
+                <div class="col-sm">
+                    <input type="text" name="Name" class="form-control" id="inputEmail3">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="col-sm col-form-label">Dojo Location:</label>
+                <div class="col-sm">
+                    <select type="text" name="Location" class="form-select" aria-label="Select location">
+                        <option selected>Select location</option>
+                        <option value="Bellevue">Bellevue</option>
+                        <option value="Log Angeles">Log Angeles</option>
+                        <option value="San Francisco">San Francisco</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="col-sm col-form-label">Favorite Language:</label>
+                <div class="col-sm">
+                    <select type="text" name="Language"  class="form-select" aria-label="Select language">
+                        <option selected>Select language</option>
+                        <option value="Python">Python</option>
+                        <option value="Javascript">Javascript</option>
+                        <option value="C#">C#</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Comment (optional):</label>
+                <textarea type="text" name="Comment" class="form-control" rows="3"></textarea>
+            </div>
+            <div class="submitButton">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+                
+        </form>
+    </div>
+</body>
+
+</html>
